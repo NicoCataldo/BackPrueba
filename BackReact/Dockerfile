@@ -1,7 +1,7 @@
 FROM alpine:latest as build
 
 RUN apk update
-RUN apk add openjdk17
+RUN apk add openjdk21
 
 COPY . .
 RUN chmod +x ./gradlew
